@@ -9,7 +9,6 @@ def get_battery_percentage():
     result = run(
         battery_percentage_command,
         shell=True,
-        stderr=subprocess.PIPE,
         stdout=subprocess.PIPE,
         universal_newlines=True)
     return result.stdout.strip()
