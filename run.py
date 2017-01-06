@@ -6,7 +6,7 @@ def main():
         # Runs Script that gets current Battery Charge
         os.system("./battery.sh")
         time.sleep(1)
-        # Reads The Charge Note: Looking for a better way
+        # Reads The Charge. Note: Looking for a better way to do this
         with open('data.json', 'r') as f:
             data = json.load(f)
             val = int(data["Charge"])
